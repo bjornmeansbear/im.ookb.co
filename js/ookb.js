@@ -18,7 +18,7 @@
   // Some Custom JS for the site
   // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
   $(document).ready(function() {
-    $("section.toggle > article ").hide();
+    $("section.toggle article ").hide();
     });
 	
   $("section.toggle").click(function () {
