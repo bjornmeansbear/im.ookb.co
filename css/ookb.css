@@ -1,0 +1,27 @@
+/* Update a few things from Bootstrap.css */
+
+/*
+body {
+  color: rgba(55,46,42,1) !important;
+}
+
+.navbar-inverse .navbar-inner {
+  background: #848478;
+}
+
+*/
+
+section.toggle {
+  border-top: 1px solid;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+section.toggle:last-child {
+  border-bottom: 1px solid;
+  padding-bottom: 40px;
+}
+
+footer {
+  margin: 120px 0;
+}
