@@ -21,8 +21,8 @@
     $("section.toggle > article ").hide();
     });
 	
-  $("section.toggle h2").click(function () {
-    $(this).parent().children("article").toggle("slow");
+  $("section.toggle").click(function () {
+    $(this).children("article").toggle("slow");
     });    
 
 }(window.jQuery);
