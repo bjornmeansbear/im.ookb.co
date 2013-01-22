@@ -153,6 +153,18 @@ article ol {
 /*=======================================*/
 
 /* Main Layout */
+header {
+  border-bottom: 1px solid #EC4079;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+body.calendar header {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 footer {
   margin: 120px 0;
 }
