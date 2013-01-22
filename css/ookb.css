@@ -1,5 +1,19 @@
 /* Update a few things from Bootstrap.css */
 /*======*/
+/* =General
+=========================================================*/
+.left        {float:left;}
+.right       {float:right;}
+.clear       {clear:both;}
+.clearLeft   {clear:left;}
+.clearRight  {clear:right;}
+.add-bottom  { !important; }
+.add-top     { !important; }
+.relative    {position:relative !important; z-index:1;}
+/*
+=========================================================*/
+
+
 body { color: rgba(55,46,42,1); }
 
 a { 
