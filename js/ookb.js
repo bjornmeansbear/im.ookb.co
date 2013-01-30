@@ -16,12 +16,12 @@
   "use strict"; // jshint ;_;
 
   // Some Custom JS for the site
-  // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
+  // Several different hide/show events...
+  
 /*
   $(document).ready(function() {
     $("section.toggle > article ").hide();
     });
-	
 */
 	//click on title of section to hide/show
   $("section.toggle h2").click(function () {
@@ -41,5 +41,10 @@
     $(this).children("article").show("slow");
     });    
 */
+
+  $("article.toggle ol p").click(function () {
+    $(this).parent('ol').toggle("slow");
+    });    
+
 
 }(window.jQuery);
