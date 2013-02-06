@@ -5,7 +5,7 @@
 .bottom { bottom:0; }
 .left   {   left:0; }
 
-.red, .green, .blue, .yellow {
+div.red, div.green, div.blue, div.yellow {
   display: block;
   height: 144px;
   width: 144px;
@@ -25,3 +25,9 @@ a.white {
 }
 
 p {text-indent: -9999999px; overflow: hidden;}
+
+h1 {
+  width: auto;
+  margin: 0 144px;
+  text-align: center;
+}
