@@ -27,7 +27,14 @@ a.white {
 p {text-indent: -9999999px; overflow: hidden;}
 
 h1 {
-  width: auto;
-  margin: 0 144px;
+  margin: 45% 0 0;
   text-align: center;
+}
+
+* {
+transition: background-color 500ms;
+-moz-transition: background-color 500ms; /* Firefox  */
+-webkit-transition: background-color 500ms; /* Safari and Chrome */
+-o-transition: background-color 500ms; /* Opera */
+-ms-transition: background-color 500ms; /* IE */
 }

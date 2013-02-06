@@ -1,26 +1,26 @@
 * {z-index: 1}
 
 body {
-  background: rgba(132,132,120,1);
+  background-color: rgba(132,132,120,1);
 }
 
 .red {
-  background: rgba(169,87,86,1);
+  background-color: rgba(169,87,86,1);
 }
 
 .blue {
-  background: rgba(157,178,176,1);
+  background-color: rgba(157,178,176,1);
 }
 
 .green {
-  background: rgba(140,165,115,1);
+  background-color: rgba(140,165,115,1);
 }
 
 .yellow {
-  background: rgba(197,192,101,1);
+  background-color: rgba(197,192,101,1);
 }
 
 .white {
-  background: white;
+  background-color: white;
   z-index: 99;
 }
