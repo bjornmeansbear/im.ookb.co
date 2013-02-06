@@ -1,0 +1,27 @@
+.top, .right, .bottom, .left { position: absolute; }
+
+.top    {    top:0; }
+.right  {  right:0; }
+.bottom { bottom:0; }
+.left   {   left:0; }
+
+.red, .green, .blue, .yellow {
+  display: block;
+  height: 144px;
+  width: 144px;
+  overflow: hidden;
+}
+
+.white.top    {    top:12px; }
+.white.right  {  right:12px; }
+.white.bottom { bottom:12px; }
+.white.left   {   left:12px; }
+
+a.white {
+  display: block;
+  height: 36px;
+  width: 36px;
+  overflow: hidden;
+}
+
+p {text-indent: -9999999px; overflow: hidden;}
