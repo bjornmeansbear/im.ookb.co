@@ -8,8 +8,8 @@
 div.red, div.green, div.blue, div.yellow {
   display: block;
   height: 144px;
-  width: 144px;
   overflow: hidden;
+  width: 144px;
 }
 
 .white.top    {    top:12px; }
@@ -20,15 +20,22 @@ div.red, div.green, div.blue, div.yellow {
 a.white {
   display: block;
   height: 36px;
-  width: 36px;
   overflow: hidden;
+  width: 36px;
 }
 
-p {text-indent: -9999999px; overflow: hidden;}
+p {
+  overflow: hidden;
+  text-indent: -9999999px;
+}
 
 h1 {
-  margin: 45% 0 0;
+  position: absolute;
+  top: 45%;
+  left:50%;
+  margin-left:-300px;
   text-align: center;
+  width:600px;
 }
 
 * {
