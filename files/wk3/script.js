@@ -13,3 +13,7 @@
   $(".yellow").click(function () {
     $("body").removeClass("red white blue green").addClass("yellow");
     });
+    
+  $(".white").click(function () {
+    $("body").removeClass("red white blue green yellow");
+    });
