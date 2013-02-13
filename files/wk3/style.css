@@ -1,6 +1,6 @@
 * {z-index: 1}
 
-body {
+body, .grey {
   background-color: rgba(132,132,120,1);
 }
 
