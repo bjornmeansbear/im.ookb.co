@@ -15,6 +15,5 @@
     });
     
   $(".white").click(function () {
-    $("body").removeClass("red white blue green yellow");
-    $("body").addClass("grey")
+    $("body").removeClass("red white blue green yellow").addClass("grey")
     });
