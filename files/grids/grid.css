@@ -45,3 +45,7 @@
 /*=========================================*/
 /*=========================================*/
 
+/* Print the grid in the background */
+header, #main, footer {
+  background: transparent url(960px-12col-58w-24gut.png) center top repeat-y;
+}
