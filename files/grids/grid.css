@@ -49,3 +49,17 @@
 header, #main, footer {
 /*   background: transparent url(960px-12col-58w-24gut.png) center top repeat-y; */
 }
+
+html {
+  min-height: 100%;
+  background: #372E2A;
+  background: linear-gradient(45deg, #372E2A 33%, #848478 66%, #EC4079);
+  background-image: -webkit-linear-gradient(45deg, #372E2A 33%, #848478 66%, #EC4079);  /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+  background-image: -moz-linear-gradient(45deg, #372E2A 33%, #848478 66%, #EC4079);  /* Firefox 3.6+ */
+  background-image: -ms-linear-gradient(45deg, #372E2A 33%, #848478 66%, #EC4079);  /* IE 10+ */
+  background-image: -o-linear-gradient(45deg, #372E2A 33%, #848478 66%, #EC4079);  /* Opera 11.10+ */
+}
+/* help with gradients, etc. */
+/* http://css-tricks.com/css3-gradients/ */
+/* http://www.the-art-of-web.com/css/linear-gradients/#.USwSJVp36DI */
+/* http://www.colorzilla.com/gradient-editor/ */

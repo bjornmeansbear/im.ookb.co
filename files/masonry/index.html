@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="index.css" />
+<title>Bonnie Silverberg</title>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li>WORK</li>
+      <li>ABOUT</li>
+      <li>CONTACT</li>
+      <br class="clear"/>
+    </ul>
+  </nav>
+  
+  <hr class="clear"/>
+  
+  <div id="container">
+  
+    <div class="box1"><p class="centered">1</p></div>
+
+    <div class="box1"><p class="centered">2</p></div>
+  
+    <div class="box2"><p class="centered">3</p></div>
+  
+    <div class="box1"><p class="centered">4</p></div>
+
+    <div class="box3"><p class="centered">5</p></div>
+
+    <div class="box1"><p class="centered">6</p></div>
+
+    <div class="box1"><p class="centered">7</p></div>
+      
+    <div class="box3"><p class="centered">8</p></div>
+  
+    <div class="box1"><p class="centered">9</p></div>
+  
+    <div class="box2"><p class="centered">10</p></div>
+
+    <div class="box1"><p class="centered">11</p></div>
+  
+    <div class="box4"><p class="centered">12</p></div>
+
+    <div class="box1"><p class="centered">13</p></div>
+  
+    <div class="box3"><p class="centered">14</p></div>
+  
+    <div class="box4"><p class="centered">15</p></div>
+  
+    <div class="box1"><p class="centered">16</p></div>
+      
+    <div class="box1"><p class="centered">17</p></div>
+
+    <div class="box1"><p class="centered">18</p></div>
+  
+    <div class="box3"><p class="centered">19</p></div>
+
+    <div class="box2"><p class="centered">20</p></div>
+
+    <div class="box1"><p class="centered">21</p></div>
+
+    <div class="box1"><p class="centered">22</p></div>
+  
+    <div class="box2"><p class="centered">23</p></div>
+  
+    <div class="box1"><p class="centered">24</p></div>
+
+    <div class="box3"><p class="centered">25</p></div>
+
+    <div class="box1"><p class="centered">26</p></div>
+
+    <div class="box1"><p class="centered">27</p></div>
+      
+    <div class="box1"><p class="centered">28</p></div>
+  
+    <div class="box1"><p class="centered">29</p></div>
+  
+    <div class="box2"><p class="centered">30</p></div>
+
+    <div class="box4"><p class="centered">31</p></div>
+
+    <div class="box3"><p class="centered">32</p></div>
+  
+    <div class="box1"><p class="centered">33</p></div>
+  
+    <div class="box3"><p class="centered">34</p></div>
+  
+    <div class="box4"><p class="centered">35</p></div>
+  
+    <div class="box1"><p class="centered">36</p></div>
+      
+    <div class="box1"><p class="centered">37</p></div>
+
+    <div class="box1"><p class="centered">38</p></div>
+  
+    <div class="box3"><p class="centered">39</p></div>
+
+    <div class="box2"><p class="centered">40</p></div>
+
+    <div class="box1"><p class="centered">41</p></div>
+
+    <div class="box1"><p class="centered">42</p></div>
+  
+    <div class="box4"><p class="centered">43</p></div>
+  
+    <div class="box1"><p class="centered">44</p></div>
+
+  </div>
+  
+  <hr class="clear"/>
+
+  <footer>
+    <p>I think I figured it out... the columnwidth, which needs to be the smallest column value, AND a gutter width, which should be the actual gutter amount you want between the columns, need to be declared.</p>
+  </footer>
+
+  <!-- Masonry Script stuff is happening below here -->
+  <script src="masonry.min.js"></script>
+  <script> window.onload = function() {
+    var wall = new Masonry( document.getElementById('container'), {
+      columnWidth: 76,
+      gutterWidth: 20
+    });
+  };
+  </script>
+  
+</body>
+
+</html>
