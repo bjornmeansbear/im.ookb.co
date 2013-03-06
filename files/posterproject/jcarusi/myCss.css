@@ -1,0 +1,253 @@
+/* Colors 
+      pink: rgba(236,64,121,1)
+ dark grey: rgba(96,103,103,1)
+light gray: rgba(132,132,120,1)
+    yellow: rgba(175,171,104,1)
+dark brown: rgba(47,41,38,1)
+     green: rgba(140,165,115,1)
+      blue: rgba(157,178,176,1)
+    purple: rgba(174,139,164,1)
+       red: rgba(169,87,86,1)
+    orange: rgba(195,115,99,1)
+*/
+
+/******/
+
+/* 1. BASIC CONSTANTS */
+/*=========================================*/
+/*=========================================*/
+
+.left   { float: left; }
+.right  { float: right; }
+.clear  { display: block; clear:both; }
+
+/*Clearfix*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* 2. Typography Stuff */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Playfair+Display:400,700,900,400italic,700italic,900italic|PT+Sans:400,700|Libre+Baskerville:400,700,400italic|Droid+Serif:400,700,700italic|Abril+Fatface|Open+Sans:400,300,600,700,800|Volkhov|Playfair+Display+SC:900,900italic|Old+Standard+TT:400,700,400italic|Sanchez);
+
+body {width: 960px;
+ }
+ 
+a {text-decoration: none;
+color: #000}
+
+a:hover {color: #FCF}
+
+/* 3. General Layout Things */
+/*=========================================*/
+
+*{margin:0;
+	padding:0;
+	position: relative;
+	z-index:1;
+}
+
+.name{ font-family: 'Abril Fatface', cursive; 
+		font-style: regular;
+		margin-top:200px;
+		font-size: 200px;
+		line-height: 200px;
+		position: relative;
+		left: 200px;
+		top: -50px;
+		
+		transform: rotate(-45deg);
+-ms-transform: rotate(-45deg); /* IE 9 */
+-webkit-transform: rotate(-45deg); /* Safari and Chrome */
+-o-transform: rotate(-45deg); /* Opera */
+-moz-transform: rotate(-45deg); /* Firefox */
+
+
+		}
+		
+.quote1{font-family: 'Lato', sans-serif;
+		width: 300px;
+		font-size: 20px;
+		letter-spacing: 2px;
+		position: relative;
+		
+		transform: rotate(-45deg);
+-ms-transform: rotate(-45deg); /* IE 9 */
+-webkit-transform: rotate(-45deg); /* Safari and Chrome */
+-o-transform: rotate(-45deg); /* Opera */
+-moz-transform: rotate(-45deg); /* Firefox */
+left:270px;
+top:-280px;
+text-align: right;
+		
+}
+.quote2{
+	font-family: 'Droid', serif;
+		width: 700px;
+		font-weight: 700;
+		font-size: 30px;
+		letter-spacing: 1px;
+		line-height:1em;
+		position: relative;
+		
+		transform: rotate(-45deg);
+-ms-transform: rotate(-45deg); /* IE 9 */
+-webkit-transform: rotate(-45deg); /* Safari and Chrome */
+-o-transform: rotate(-45deg); /* Opera */
+-moz-transform: rotate(-45deg); /* Firefox */
+left:50px;
+top:-450px;
+
+	}
+	
+	
+.quote3{position: relative;
+		font-family: 'Playfair Display', serif;
+		width: 400px;
+		font-style: italic;
+		font-weight: 900;
+		font-size: 50px;
+		letter-spacing: .5px;
+		line-height:1em;
+		text-align: right;
+	
+		
+		transform: rotate(45deg);
+-ms-transform: rotate(45deg); /* IE 9 */
+-webkit-transform: rotate(45deg); /* Safari and Chrome */
+-o-transform: rotate(45deg); /* Opera */
+-moz-transform: rotate(45deg); /* Firefox */
+left:100px;
+top:-30px;}
+
+span {font-size:150px;
+font-style:normal;
+}
+ en{top: -40px;
+ left: -10px;}
+
+
+.quote4{position: relative;
+		font-family: 'Open Sans', san-serif;
+		width: 1000px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		letter-spacing: .5px;
+		line-height:1em;
+		left:250px;
+		top:-650px;
+	
+		
+		transform: rotate(-45deg);
+-ms-transform: rotate(-45deg); /* IE 9 */
+-webkit-transform: rotate(-45deg); /* Safari and Chrome */
+-o-transform: rotate(-45deg); /* Opera */
+-moz-transform: rotate(-45deg); /* Firefox */
+}
+
+
+
+.quote5{position: relative;
+		font-family: 'Old Standard TT', serif;
+		width: 550px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 50px;
+		letter-spacing: .5px;
+		line-height:1em;
+		left:700px;
+		top:-500px;
+	
+		
+		transform: rotate(-45deg);
+-ms-transform: rotate(-45deg); /* IE 9 */
+-webkit-transform: rotate(-45deg); /* Safari and Chrome */
+-o-transform: rotate(-45deg); /* Opera */
+-moz-transform: rotate(-45deg); /* Firefox */}
+
+
+.quote6{position: relative;
+		font-family: 'Sanchez', serif;
+		width: 1000px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 30px;
+		letter-spacing: .5px;
+		line-height:1em;
+		left:440px;
+		top:-790px;
+	
+		
+		transform: rotate(-45deg);
+-ms-transform: rotate(-45deg); /* IE 9 */
+-webkit-transform: rotate(-45deg); /* Safari and Chrome */
+-o-transform: rotate(-45deg); /* Opera */
+-moz-transform: rotate(-45deg); /* Firefox */}
+
+.quote7{position: relative;
+		font-family: 'Helvetica', sans-serif;
+		width: 700px;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 60px;
+		letter-spacing: .5px;
+		line-height:1em;
+		left:500px;
+		top:-300px;
+	
+		
+		transform: rotate(45deg);
+-ms-transform: rotate(45deg); /* IE 9 */
+-webkit-transform: rotate(45deg); /* Safari and Chrome */
+-o-transform: rotate(45deg); /* Opera */
+-moz-transform: rotate(45deg); /* Firefox */}
+
+
+
+ 
+article p {line-height:80px;
+margin:0;
+padding:0;
+}
+
+
+
+article p:nth-child(3) {margin-left:-100px}
+article p:nth-child(2) {margin-left:100px}
+article p:nth-child(4) {margin-left:200px}
+article p:nth-child(5) {margin-left:-300px}
+article p:nth-child(3) {margin-left:0}
+
+article span {color: red;}
+
+article span.blue {color: blue; font-size: 200px;}
+
+/*=========================================*/
+
+/** TEXT ONLY ÒPOSTERÓ **/
+
+
+/** With Image Poster **/
