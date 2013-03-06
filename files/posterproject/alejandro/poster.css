@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.text {
+  position:absolute;
+  width:2000px;
+  margin-top:20px;
+  font-family:'Stalinist One', cursive;
+  font-size:60px;
+  color:white;  
+  }
+  
+.text2 {
+  position:absolute;
+  width:2000px;
+  margin-top:672px;
+  font-family:'Stalinist One', cursive;
+  font-size:60px;
+  color:white;  
+  }
+  
+.text3 {
+  position:absolute;
+  width:2000px;
+  margin-top:352px;
+  margin-left:1125px;
+  font-family:'Stalinist One', cursive;
+  font-size:17px;
+  color:white;  
+  }  
+  
+.text4 {
+  position:absolute;
+  width:2000px;
+  margin-top:280px;
+  margin-left:585px;
+  font-family:'Stalinist One', cursive;
+  color:red;  
+  }
+  
+.ugtext1 {
+  font-size:75px;
+  }
+
+.ugtext2 {
+  font-size:95px;
+  }  
+  
+.ugtext3 {
+  font-size:115px;
+  }
+  
+.ugtext4 {
+  font-size:135px;
+  }        
+
+
+.bluecircle {
+  margin-top:104px;
+  margin-left:0px;
+  background-color: blue;
+  height: 562px;
+  -moz-border-radius:281px;
+  -webkit-border-radius: 281px;
+  border-radius:281px;
+  width: 562px;
+  position:absolute;
+  }
+  
+.whitecircle {
+  margin-top:94px;
+  margin-left:-10px;
+  background-color: white;
+  height: 582px;
+  -moz-border-radius:291px;
+  -webkit-border-radius: 291px;
+  border-radius:291px;
+  width: 582px;
+  position:absolute;
+  }  
+
+.blackrectangle {
+  margin-top:20px;
+  width:300px;
+  height:731px;
+  background-color:black;
+  position:absolute;
+  }
+
+.upperredrectangle {
+  margin-top:20px;
+  margin-left:310px;
+  width:1000px;
+  background-color:red;
+  height:75px;
+  position:absolute;
+  }
+
+.upperskewedredrectangle {
+  margin-top:100px;
+  margin-left:1115px;
+  height:75px;
+  width:200px;
+  background-color:red;
+  position:absolute;
+  transform: rotate(-10deg) skew(-10deg, -10deg) ;
+  -webkit-transform: rotate(-10deg) skew(-10deg, -10deg) ;
+  -moz-transform: rotate(-10deg) skew(-10deg, -10deg) ;
+  -o-transform: rotate(-10deg) skew(-10deg, -10deg) ;
+  -ms-transform: rotate(-10deg) skew(-10deg, -10deg) ;
+  }
+  
+.upperskewedredrectangle2 {
+  margin-top:195px;
+  margin-left:1115px;
+  height:75px;
+  width:200px;
+  background-color:red;
+  position:absolute;
+  transform: rotate(-10deg) skew(-10deg, -10deg) ;
+  -webkit-transform: rotate(-10deg) skew(-10deg, -10deg) ;
+  -moz-transform: rotate(-10deg) skew(-10deg, -10deg) ;
+  -o-transform: rotate(-10deg) skew(-10deg, -10deg) ;
+  -ms-transform: rotate(-10deg) skew(-10deg, -10deg) ;
+  }  
+
+.uppergreentriangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 280px 860px 0 0px;
+  border-color: green transparent transparent transparent;
+  position:absolute;
+  margin-top:105px;
+  margin-left:310px;
+  }
+
+.lowergreentriangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 860px 280px 0px;
+  border-color: transparent transparent green transparent;
+  position:absolute;
+  margin-top:385px;
+  margin-left:310px;
+  }
+
+.lowerskewedredrectangle {
+  margin-top:595px;
+  margin-left:1115px;
+  height:75px;
+  width:200px;
+  background-color:red;
+  position:absolute;
+  transform: rotate(10deg) skew(10deg, 10deg)  ;
+  -webkit-transform: rotate(10deg) skew(10deg, 10deg)  ;
+  -moz-transform: rotate(10deg) skew(10deg, 10deg)  ;
+  -o-transform: rotate(10deg) skew(10deg, 10deg)  ;
+  -ms-transform: rotate(10deg) skew(10deg, 10deg)  ;
+  }
+  
+.lowerskewedredrectangle2 {
+  margin-top:500px;
+  margin-left:1115px;
+  height:75px;
+  width:200px;
+  background-color:red;
+  position:absolute;
+  transform: rotate(10deg) skew(10deg, 10deg)  ;
+  -webkit-transform: rotate(10deg) skew(10deg, 10deg)  ;
+  -moz-transform: rotate(10deg) skew(10deg, 10deg)  ;
+  -o-transform: rotate(10deg) skew(10deg, 10deg)  ;
+  -ms-transform: rotate(10deg) skew(10deg, 10deg)  ;
+  }  
+
+.lowerredrectangle {
+  margin-top:675px;
+  margin-left:310px;
+  width:1000px;
+  background-color:red;
+  height:75px;
+  float:left;
+  position:absolute;
+  }
+  
+.isotriangle {
+  margin-left:380px;
+  margin-top:145px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 240px 720px 240px 0;
+  border-color: transparent black transparent transparent;
+  position:absolute;
+  }  
+  
+.isotriangle2 {
+  margin-left:910px;
+  margin-top:255px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 130px 400px 130px 0;
+  border-color: transparent blue transparent transparent;
+  position:absolute;
+  }  
+  
+.isotriangle3 {
+  margin-left:399px;
+  margin-top:145px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 240px 720px 240px 0;
+  border-color: transparent white transparent transparent;
+  position:absolute;
+  }
+  
+  
+
+
+
