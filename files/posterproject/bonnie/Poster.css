@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {width: 960px;
+margin:0 auto;}
+
+.main {width:800px;
+height:890px;
+background-color:#6CF;
+z-index:1;
+position:fixed;}
+
+.free {
+	float:left;
+	height:100px;
+	width:400px;
+	background-color:#900;
+	position:fixed;
+	z-index:10;
+	color:#FCC;
+	font-family: 'Sancreek', cursive;
+	font-size:150px;
+	text-align:center;
+	padding-bottom:100px;}
+	
+.lines {height:890px;
+	width:5px;
+	color:#fcc;
+	position:relative;
+	z-index:2;}
+	
+.main2 {float:left;
+	height:700px;
+		width: 580px;
+		background-color:#FCC;
+		color:#900;
+		margin-left:180px;
+		z-index:5;
+		position:relative;
+		margin-top:150px;
+		text-align:center;}
+
+
+.CB {
+	margin-top:100px;
+	font-family: 'Great Vibes', cursive;
+	font-size:180px;
+	line-height:160px;
+	text-align:center;}
+
+.HL {
+	font-family: 'Coda Caption', sans-serif;
+	font-size:78px;
+	position:relative;
+	line-height:75px;
+	letter-spacing:-5px;}
+
+.with {
+	font-family: 'Great Vibes', cursive;
+	font-size:90px;
+	line-height:80px;
+}
+
+.change {
+	font-family: 'Coda Caption', sans-serif;
+	font-size:70px;
+	letter-spacing:-5px;
+	line-height:50px;}
+
+.AU {
+font-family: 'Coda Caption', sans-serif;
+	float:right;
+	background-color:#900;
+	color:#FCC;
+	height:90px;
+	width:200px;
+	margin-top:50px;
+	font-size:45px;
+	letter-spacing:-5px;
+	z-index:20;
+	position:relative;
+	margin-top:-50px;
+	text-align:center;}
