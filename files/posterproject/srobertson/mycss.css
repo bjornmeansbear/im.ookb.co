@@ -1,0 +1,62 @@
+
+
+
+body {width: 900px;
+	  background-color: #999}
+	  
+	  
+.postertext {font-size:50px;
+			 font-weight:600;
+			 color: #FFF;
+			 text-align: center;
+			 font-family:Verdana, Geneva, sans-serif;
+			 transform: rotate(-30deg);
+			  -webkit-transform: rotate(-30deg);
+			  margin-top:175px;}
+			  
+p2{font-size:90px;
+	font-family:'Gravitas One';}
+
+			 
+.shape1 {
+	width: 800px;
+	height: 800px;
+	background: #666;
+	-webkit-border-radius: 400px;
+	border-radius: 450px;
+	position:fixed;
+	margin-top:-640px;
+	z-index:-1;
+	margin-left: 80px;}
+
+.heart{
+    position: relative;
+    width: 100px;
+    height: 90px;}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;}
+.heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin :100% 100%;}
+			
+			
+.holder {-webkit-transform: rotate(-30deg);
+		  }
+
+		

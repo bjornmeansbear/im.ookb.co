@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'ostrich_sansbold';
+    src: url('fonts/ostrich_bold-webfont.woff') format('woff');
+	 font-style: normal;
+    }
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('fonts/raleway_thin-webfont.woff') format('woff');
+    font-style: normal;
+}
+
+
+html {
+	background: rgb(193, 213, 193);
+	width: 960px;
+	margin: 0 auto;
+
+	}
+	
+
+.hello, .welcome, .exclaim {
+	font-family: 'ostrich_sansbold';
+	color: rgb(155, 213, 193);
+	text-align: center;
+	z-index: -2;
+	position: absolute;
+
+}
+
+.exclaim {
+	font-size: 250px;
+	top: 170;
+	}
+
+.hello  {
+  font-size: 477px;
+  top: 0;
+}
+
+.welcome {
+  font-size: 290px;
+  top: 575;
+}
+
+
+myfloat {
+	float: left;
+	}	
+ 
+/* SHAPES */	
+.circle {
+  border-radius: 50%;
+  background-color: rgb(155, 213, 193);
+  width: 36px;
+  height: 36px; 
+  float: left;
+  margin-right: 60px;
+
+ 	}	
+ 	
+ .circle-no-right {
+  border-radius: 50%;
+  background-color: rgb(155, 213, 193);
+  width: 36px;
+  height: 36px; 
+  float: left;
+
+ 	}		
+
+ .down-triangle-2, .down-triangle-3, .down-triangle-4 { 
+   width: 0; 
+   height: 0;
+   border-top: 60px solid rgba(213, 250, 95,.75 );
+   border-left: 40px solid transparent; 
+   border-right: 40px solid transparent; 
+   position: fixed;
+   z-index: -1;
+  margin-left: 570px;
+}
+
+
+ .down-triangle-5, .down-triangle-6, .down-triangle-7 { 
+   width: 0; 
+   height: 0;
+   border-top: 60px solid rgba(213, 250, 95,.75 );
+   border-left: 40px solid transparent; 
+   border-right: 40px solid transparent; 
+   position: fixed;
+   z-index: -1;
+  margin-left: 450px;
+}
+
+ .down-triangle-8, .down-triangle-9, .down-triangle-10 { 
+   width: 0; 
+   height: 0;
+   border-top: 60px solid rgba(213, 250, 95,.75 );
+   border-left: 40px solid transparent; 
+   border-right: 40px solid transparent; 
+   position: fixed;
+   z-index: -1;
+  margin-left: 330px;
+}
+
+
+.down-triangle-2, .down-triangle-5, .down-triangle-8 {
+	 bottom: 275;
+	 }
+	 
+.down-triangle-3, .down-triangle-6, .down-triangle-9 {
+	 bottom: 135;
+	 }	 
+
+ .down-triangle-4, .down-triangle-7, .down-triangle-10 {
+	 bottom: 0;
+	 }
+	 
+ 	
+.divide {
+ z-index: -1;
+  position: absolute;
+  top: 470;
+  width: 100%;
+	} 	
+	
+	
+.divide-bottom, .divide-bottom-left {
+ z-index: -1;
+  position: absolute;
+  top: 30;
+}	
+
+.divide-bottom-left {
+ left: 720;
+ }
+ 
+ 
+/* TXT COMPONENTS */
+  	
+.clear {
+	height: 370px;
+	width: 100%;
+	position: relative;
+	z-index: 5;
+	}
+	 	
+.name, .intro, .more {
+		font-family: 'ralewaythin';
+		z-index: 4;
+		position: relative;
+		float: left
+		}
+		
+.name {
+		font-size: 55px;
+		width: 700px;
+			}		
+			
+.intro { 
+		margin-top: 27px;
+		font-size: 26px;
+		width: 225px;
+		}
+		
+		
+.together {	
+	margin-top: 500px;
+
+	}			
+
+.current {
+	font-size: 26px;
+	margin-left: 335px;
+	height: 200px;
+	width: 320px;
+	}
+	
+
+.beg {
+	font-size: 55px;
+	margin-left: 65px;
+	margin-top: -35px;
+		}
+
+.more {
+	width: 960px;
+	height: 250px;
+}
+
+
+a:link, a:visited {
+	color: rgb(244,59,59);
+	text-decoration: none;
+	padding: 5px;
+	}
+
+a:hover {
+	background-color: rgb(244,59,59);
+	color: white;
+	}
+
+ul.activities {
+	list-style-type: none;
+	background-color: rgba(155, 213, 193, .8);
+	height: 350px;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding-top: 50px;
+	}
+	
+li {
+	line-height: 2;
+	font-size: 35px;
+	}	
+
+.social {
+	padding-top: 30px;
+	text-align: center;
+	}
+
+footer {
+	font-family: 'ralewaythin';
+	font-size: 29px;
+	text-align: center;
+	margin-top: 1360px;
+	padding-bottom: 25px;
+	}
+

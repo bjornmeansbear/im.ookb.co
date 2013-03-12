@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Web Poster Type</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/fontello-embedded.css">
+                <link rel="stylesheet" href="css/main.css">
+
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+              
+        <div id="main" class="cf">     
+          
+        
+    <article class="columns twelve offsetthree">
+         	
+         	<div class="center">
+         	
+         	<div class="columns three offsetone">
+         	
+         	<article class="column" id="heading">
+ 	     	<div class="example">
+			<span id="example1" class="top-text">a Working Class Road Race</span>  <!-- This curves on the top! -->
+			</div>
+         	</article>
+         	
+         	
+	     <article class="column" id="title">
+			<span class="ital">The</span>
+	        <h1 id="steve">Stevedore's</h1>        
+	       <span class="caption">race</span>
+	     </article>
+	       
+	       <article class="column" id="date">
+	        <span class="cap">1<span class="min">st</span> Annual</span><span class="anchor" title="Code: 0xe81f"><i class="icon-harbor"></i></span>
+	        <span class="cap">2013</span> 
+	       </article>
+	           
+        
+          <!-- This curves on the bottom -->
+    	<div class="example" id="push">
+				<span id="example2" class="top-text">MARCH TWENTY FIFTH</h3>
+				</div>
+	
+         <article class="column" id="low">
+        <h4>promptly begins</h4>
+        <div class="line1"></div><p>at</p> <div class="line2">
+        	</div>
+        <h4>seven o'clock in the am</h4>
+         </article>
+        	</article>
+        
+        </div>
+        </div>
+      
+        </div>
+
+        </div>
+  <!-- Le Javascript -->
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.arctext.js"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			var $headline = $('#headline').hide();
+		
+			var $word1		= $('#arc-wrapper').find('h3').hide();
+			var $word2		= $('#arc-wrapper').find('h4').hide();
+			
+			var $example1	= $('#example1').hide();
+			var $example2	= $('#example2').hide();
+			var $example3	= $('#example3').hide();
+			var $example4	= $('#example4').hide();
+			
+			google.load('webfont','1');
+			
+			google.setOnLoadCallback(function() {
+				WebFont.load({
+					google		: {
+						families	: ['Montserrat','Concert One']
+					},
+					fontactive	: function(fontFamily, fontDescription) {
+						init();
+					},
+					fontinactive	: function(fontFamily, fontDescription) {
+						init();
+					}
+				});
+			});
+			
+			function init() {
+			
+				$headline.show().arctext({radius: 400});
+					
+				$word1.show().arctext();
+				$word2.show().arctext({radius: 148, dir: -1});
+				
+				$example1.show().arctext({radius: 300});
+				$example2.show().arctext({radius: 400, dir: -1});
+				$example3.show().arctext({radius: 500, rotate: false});
+				$example4.show().arctext({radius: 300});
+				
+				$('#button_set').on('click', function() {
+					$example4.arctext('set', {
+						radius		: 140,
+						dir			: -1
+					});
+					return false;
+				});
+				$('#button_anim1').on('click', function() {
+					$example4.arctext('set', {
+						radius		: 400, 
+						dir			: -1,
+						animation	: {
+							speed	: 300,
+							easing  : 'ease-out'
+						}
+					});
+					return false;
+				});
+				$('#button_anim2').on('click', function() {
+					$example4.arctext('set', {
+						radius		: 200, 
+						dir			: 1, 
+						animation	: {
+							speed	: 300
+						}
+					});
+					return false;
+				});
+				$('#button_reset').on('click', function() {
+					$example4.arctext('set', {
+						radius		: 300, 
+						dir			: 1
+					});
+					return false;
+				});
+			
+			};
+		</script/>
+
+        
+
+        </script>
+    </body>
+</html>

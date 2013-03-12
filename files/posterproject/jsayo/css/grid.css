@@ -1,0 +1,86 @@
+/* 1. BASIC CONSTANTS */
+/*=========================================*/
+/*=========================================*/
+
+/*Clearfix*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+/* 2. Column Widths */
+/*=========================================*/
+/*=========================================*/
+
+.column, .columns { margin: 0 12px; }
+.columns {float: left}
+
+.one 	{width: 58px;} 
+.two 	{width: 140px;}
+.three	{width: 222px;}
+.four 	{width: 304px;}
+.five 	{width: 386px;}
+.six 	{width: 468px;}
+.seven 	{width: 550px;}
+.eight 	{width: 632px;}
+.nine 	{width: 714px;}
+.ten 	{width: 796px;}
+.eleven {width: 878px;}
+.twelve {width: 960px;}
+
+header, #main, footer {width: 984px; margin: 0 auto;}
+
+
+
+
+
+
+
+/* 3. Offsets */
+/*=========================================*/
+/*=========================================*/
+
+.offsetone		{margin-left: 94px;}
+.offsettwo		{margin-left: 176px;}
+.offsetthree	{margin-left: 258px;}
+.offsetfour 	{margin-left: 340px;}
+.offsetfive 	{margin-left: 422px;}
+.offsetsix 		{margin-left: 504px;}
+
+
+/* 4. Other Custom Grid-ular stuff */
+/*=========================================*/
+
+/*=========================================*/
+
+/* Print the grid in the background */
+
+header, #main, footer {
+   background: transparent url(../960px-12col-58w-24gut.png) center top repeat-y; 
+}
+
+
+
