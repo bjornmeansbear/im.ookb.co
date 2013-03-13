@@ -53,13 +53,25 @@
 .eleven  { width: 878px; }
 .twelve  { width: 960px; }
 
-header, #main, footer, .teaser { width: 984px; margin: 0 auto; }
+header, .main, footer, .container { width: 984px; margin: 0 auto; }
 
 
 
 /* 3. Offsets */
 /*=========================================*/
 /*=========================================*/
+.offsetone     { margin-left:  94px; }
+.offsettwo     { margin-left: 176px; }
+.offsetthree   { margin-left: 258px; }
+.offsetfour    { margin-left: 340px; }
+.offsetfive    { margin-left: 422px; }
+.offsetsix     { margin-left: 504px; }
+.offsetseven   { margin-left: 586px; }
+.offseteight   { margin-left: 668px; }
+.offsetnine    { margin-left: 750px; }
+.offsetten     { margin-left: 832px; }
+.offseteleven  { margin-left: 914px; }
+
 
 
 /* 4. Other Custom Grid-ular stuff */
@@ -129,13 +141,13 @@ header h2 { margin-top: -2px;}
   padding: 16px 0;
 }
 
-#main article p {
+.main article p {
   text-indent: 24px;
   line-height: 24px;
   font-size: 16px;
 }
 
-#main article p:nth-child(2) {
+.main article p:nth-child(2) {
   font-size: 20px;
   line-height: 32px;
   text-indent: 0px; 
