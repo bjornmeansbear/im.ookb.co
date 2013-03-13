@@ -2,62 +2,87 @@
 <html>
   
   <head>
-    <title>Intro to Grids</title>
+    <title>Columnar &amp; Baseline Grids</title>
     <link href="grid.css" rel="stylesheet">
   </head>
   
-  <body>
+  <body class="baselinegrid">
+  <div class="columngrid">
     
     <header>
     
-      <div class="">
-        <h1>Grids and Grid Systems</h1>
+      <div class="column">
+        <h1>Columnar &amp; Baseline Grids</h1>
         <h2>Trying to teach a few things related to columns, baseline grids, reusing styles, HTML5 elements, HTML entities, some basic javascript, and maybe even a little more.</h2>
       </div>
-      
-      <nav>
-        <ul>
-          <li>Lorem</li>
-          <li>Ipsum</li>
-          <li>Dolor</li>
-          <li>Sit Amet</li>
-        </ul>
-      </nav>
+            
     </header>
 
     <div class="stripe">
-      <div id="main" class="cf">
-      
-        <article class="">
-          <h1>Gridtastic</h1>
-          <p>Single-origin coffee viral officia, vinyl kogi street art odd future. Voluptate before they sold out elit, raw denim farm-to-table banksy +1 assumenda iphone fap typewriter. Biodiesel +1 delectus chillwave wes anderson laboris. Umami cosby sweater cray, sartorial irure mollit enim quis dolor ad pariatur gluten-free gastropub etsy. Nostrud mcsweeney's farm-to-table, bushwick biodiesel 3 wolf moon master cleanse non enim brunch officia. Pariatur butcher gluten-free disrupt aliqua meh. Post-ironic quinoa fap biodiesel chambray ut, esse pinterest quis dolor proident.</p>
-        </article>
-  
-        <article class="">
-          <h1>Flextacular</h1>
-          <p>Blog in aliqua keytar, meggings farm-to-table ad nisi. Occaecat anim cosby sweater odio leggings. Banh mi skateboard non small batch sunt brooklyn, cillum incididunt officia excepteur tonx Austin lomo photo booth. Tonx hashtag forage, hoodie plaid est whatever street art laboris keffiyeh eu. Letterpress nulla gastropub ex, street art cupidatat helvetica bushwick skateboard tonx carles eiusmod. Photo booth squid 8-bit, deep v placeat quinoa tofu gastropub ut. Nisi 90's cosby sweater butcher reprehenderit, locavore mustache williamsburg retro helvetica keytar.</p>
-          <p>Stumptown tumblr squid sartorial. Freegan fugiat exercitation hoodie polaroid. Kogi deserunt vegan post-ironic ethical flannel. Laboris VHS pug, 90's truffaut helvetica ethical adipisicing literally sunt elit. Keffiyeh cliche excepteur squid fanny pack, raw denim cray pinterest freegan you probably haven't heard of them selfies typewriter cupidatat brunch. Williamsburg stumptown aliqua, squid in brooklyn iphone typewriter odd future. Pickled fugiat pug aute.</p>
-        </article>
-  
-        <article class="">
-          <h1>Modulariffic</h1>
-          <p>Sint non ea odio retro vegan trust fund, gentrify duis truffaut wayfarers jean shorts. Portland flexitarian dolor thundercats keffiyeh, proident biodiesel eiusmod brooklyn umami terry richardson consectetur etsy. Cillum bicycle rights tattooed, single-origin coffee exercitation et mcsweeney's velit pickled try-hard nihil sustainable. Ex ethnic beard, echo park bushwick tonx aliquip mustache PBR. Consequat ethical bespoke, food truck sriracha single-origin coffee odd future portland small batch terry richardson. Deserunt ullamco cosby sweater lo-fi. Selvage minim keytar, incididunt lomo laborum consequat polaroid.</p>
-        </article>
+      <article class="teaser cf">
+        <p class="column">Banjo dreamcatcher vero tofu umami freegan. Reprehenderit pop-up locavore nisi, kogi veniam ennui vegan stumptown food truck. Hashtag cray salvia eu, echo park Austin elit synth aesthetic placeat ut keytar street art truffaut ad. Trust fund photo booth typewriter, food truck skateboard keffiyeh vero. Organic pickled fap, deserunt chambray fugiat sed single-origin coffee tofu brooklyn master cleanse pork belly nihil PBR. Cliche +1 meggings ut 90's sartorial. In lo-fi qui tempor, occaecat swag sriracha aesthetic nihil dolor.</p>
+      </article>
+    </div>
 
-      </div>
+    <div id="main" class="cf">
+    
+      <article class="columns four">
+        <h1>Gridtastic</h1>
+        <p>Single-origin coffee viral officia, vinyl kogi street art odd future. Voluptate before they sold out elit, raw denim farm-to-table banksy +1 assumenda iphone fap typewriter. Biodiesel +1 delectus chillwave wes anderson laboris. Umami cosby sweater cray, sartorial irure mollit enim quis dolor ad pariatur gluten-free gastropub etsy. Nostrud mcsweeney's farm-to-table, bushwick biodiesel 3 wolf moon master cleanse non enim brunch officia. Pariatur butcher gluten-free disrupt aliqua meh. Post-ironic quinoa fap biodiesel chambray ut, esse pinterest quis dolor proident.</p>
+      </article>
+
+      <article class="columns four">
+        <h1>Flextacular</h1>
+        <p>Blog in aliqua keytar, meggings farm-to-table ad nisi. Occaecat anim cosby sweater odio leggings. Banh mi skateboard non small batch sunt brooklyn, cillum incididunt officia excepteur tonx Austin lomo photo booth. Tonx hashtag forage, hoodie plaid est whatever street art laboris keffiyeh eu. Letterpress nulla gastropub ex, street art cupidatat helvetica bushwick skateboard tonx carles eiusmod. Photo booth squid 8-bit, deep v placeat quinoa tofu gastropub ut. Nisi 90's cosby sweater butcher reprehenderit, locavore mustache williamsburg retro helvetica keytar.</p>
+        <p>Stumptown tumblr squid sartorial. Freegan fugiat exercitation hoodie polaroid. Kogi deserunt vegan post-ironic ethical flannel. Laboris VHS pug, 90's truffaut helvetica ethical adipisicing literally sunt elit. Keffiyeh cliche excepteur squid fanny pack, raw denim cray pinterest freegan you probably haven't heard of them selfies typewriter cupidatat brunch. Williamsburg stumptown aliqua, squid in brooklyn iphone typewriter odd future. Pickled fugiat pug aute.</p>
+      </article>
+
+      <article class="columns four">
+        <h1>Modulariffic</h1>
+        <p>Sint non ea odio retro vegan trust fund, gentrify duis truffaut wayfarers jean shorts. Portland flexitarian dolor thundercats keffiyeh, proident biodiesel eiusmod brooklyn umami terry richardson consectetur etsy. Cillum bicycle rights tattooed, single-origin coffee exercitation et mcsweeney's velit pickled try-hard nihil sustainable. Ex ethnic beard, echo park bushwick tonx aliquip mustache PBR. Consequat ethical bespoke, food truck sriracha single-origin coffee odd future portland small batch terry richardson. Deserunt ullamco cosby sweater lo-fi. Selvage minim keytar, incididunt lomo laborum consequat polaroid.</p>
+      </article>
+
     </div>
         
     <footer>
-      <p class="">&copy; 2013 Whomever is working on this...</p>
+      <p class="column">&copy; 2013 Whomever is working on this...</p>
     </footer>
+
+  </div>
+  <!-- end GRID columns -->
+  
+    <div id="gridbutton">
+      <!-- Show/Hide -->
+      <aside class="grid"><h3>+ Show</h3></aside>
+      <aside class="none"><h3>- Hide</h3></aside>
+    </div>
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle.all.js"></script>
 
     <!-- CUSTOM JS CAN GO IN HERE -->
     <script>
+      $(document).ready(function() {
+        $(".none").hide();
+      });
+
+      $("#gridbutton h3").click(function () {
+        $("#gridbutton aside").toggle();
+      });
+
+      $("#gridbutton .grid").click(function () {
+        $(".baselinegrid").css("background","transparent url(8px-blgrid.png) center top repeat");
+        $(".columngrid").css("background", "transparent url(960px-12col-58w-24gut.png) center top repeat-y");
+      });
+
+      $("#gridbutton .none").click(function () {
+        $(".baselinegrid").css("background","none");
+        $(".columngrid").css("background", "none");
+      });
+
     </script>
 
   </body>

@@ -1,6 +1,9 @@
 /* 1. BASIC CONSTANTS */
 /*=========================================*/
 /*=========================================*/
+.left   { float: left;  }
+.right  { float: right; }
+.clear  { clear: both;  }
 
 /*Clearfix*/
 /**
@@ -14,12 +17,12 @@
  */
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .cf:after {
-    clear: both;
+  clear: both;
 }
 
 /**
@@ -27,14 +30,14 @@
  * Include this rule to trigger hasLayout and contain floats.
  */
 .cf {
-    *zoom: 1;
+  zoom: 1;
 }
 
 /* 2. Column Widths */
 /*=========================================*/
 /*=========================================*/
 
-.column, .columns { margin: 0 12px; }
+.column, .columns { margin: 0 12px 16px 12px; }
 .columns { float:left; }
 
 .one     { width:  58px; }
@@ -50,7 +53,9 @@
 .eleven  { width: 878px; }
 .twelve  { width: 960px; }
 
-header, #main, footer { width: 984px; margin: 0 auto; }
+header, #main, footer, .teaser { width: 984px; margin: 0 auto; }
+
+
 
 /* 3. Offsets */
 /*=========================================*/
@@ -67,11 +72,93 @@ header, #main, footer { width: 984px; margin: 0 auto; }
 .offsetten     { margin-left: 832px; }
 .offseteleven  { margin-left: 914px; }
 
+
+
 /* 4. Other Custom Grid-ular stuff */
 /*=========================================*/
 /*=========================================*/
 
-/* Print the grid in the background */
-header, #main, footer {
+/* Print the grid in the background (and style the columns button)*/
+/*
+.baselinegrid {
+  background: transparent url(8px-blgrid.png) center top repeat;
+}
+
+.columngrid {
  background: transparent url(960px-12col-58w-24gut.png) center top repeat-y;
 }
+
+*/
+#gridbutton {
+  position: fixed;
+  top:8px;
+  right:8px;
+}
+
+
+
+
+
+
+/* 5. TYPOGRAPHY, layout, 
+      and fitting to the typographic grid  */
+/*=========================================*/
+/*=========================================*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 22px;
+}
+
+header h1 {
+  font-size: 64px;
+  line-height: 56px;
+  margin-bottom: 24px;
+}
+
+h2, article h1 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+header h2 { margin-top: -2px;}
+
+.stripe {
+  background: rgba(175,171,104,.5);
+  color:white;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin-bottom: 24px;
+  padding: 16px 0;
+}
+
+#main article p {
+  text-indent: 24px;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+#main article p:nth-child(2) {
+  font-size: 20px;
+  line-height: 32px;
+  text-indent: 0px; 
+}
+
+footer {
+  border-top: 8px solid rgba(175,171,104,.5); 
+  margin-top: 34px;
+  margin-bottom: 40px;
+  padding-top: 16px;
+}
+
+footer p { padding-top: 2px; }
+
