@@ -1,0 +1,150 @@
+/* 1. BASIC CONSTANTS */
+/*=========================================*/
+/*=========================================*/
+
+/*Clearfix*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+
+
+
+
+/* 2. Column Widths */
+/*=========================================*/
+/*=========================================*/
+
+.column, .columns { margin: 0 12px; }
+.columns { float:left; }
+.slideshow .inner .columns { margin:0; }
+
+.one     { width:  58px; }
+.two     { width: 140px; }
+.three   { width: 222px; }
+.four    { width: 304px; }
+.five    { width: 386px; }
+.six     { width: 468px; }
+.seven   { width: 550px; }
+.eight   { width: 632px; }
+.nine    { width: 714px; }
+.ten     { width: 796px; }
+.eleven  { width: 878px; }
+.twelve  { width: 960px; }
+
+header, .divide .inner, #main, footer { width: 984px; margin: 0 auto; }
+
+article.post .columns { margin: 0 !important; }
+
+/* 4. Other Custom Grid-ular stuff */
+/*=========================================*/
+/*=========================================*/
+
+/* Print the column grid in the background */
+/*body { background: url(blgrid-8px.png) top left repeat; }*/
+
+/*header, #main, footer  {
+ background: transparent url(960px-12col-58w-24gut.png) center top repeat-y;
+}*/
+
+
+
+/* 5. TYPOGRAPHIC GRID */
+/*=========================================*/
+/*=========================================*/
+
+* {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:16px;
+	line-height:24px;
+	margin:0;
+	padding:0; 
+}
+
+header {
+	margin-top: 22px;
+	margin-bottom: 31px;
+}
+
+header h1 {
+	font-size: 48px;
+	letter-spacing:1px;
+	line-height: 48px;
+	margin-bottom: 17px;
+}
+
+header h2, article h1 {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.divide {
+	background: rgba(50,50,50,.5);
+	color: white;
+	margin: 40px 0;
+	padding: 40px 0;	
+}
+
+.divide p {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 32px;
+}
+
+article p {
+	text-indent:48px;
+}
+
+article p:nth-child(2) {
+	font-size: 20px;
+	line-height: 24px;
+	text-indent: 0;
+}
+
+footer {
+	border-top: 8px solid;
+	margin-top: 42px;
+	margin-bottom: 40px;
+	padding-top: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

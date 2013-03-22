@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Intro to Grids</title>
+    <link href="grid.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    
+    <header>
+    
+      <div class="column">
+        <h1>Grids and Grid Systems</h1>
+        <h2>Trying to teach a few things related to columns, baseline grids, reusing styles, HTML5 elements, HTML entities, some basic javascript, and maybe even a little more.</h2>
+      </div>
+
+    </header>
+	<!-- END HEADER -->
+
+	<div class="divide cf">
+    	<div class="inner">
+    		<p class="column">VHS mlkshk assumenda, ugh nesciunt cliche hashtag next level food truck polaroid quis craft beer. Mumblecore flannel wayfarers culpa mlkshk sunt. Dreamcatcher dolore cred, small batch voluptate mixtape lomo chillwave meh laboris tofu odd future selfies. YOLO sapiente squid velit portland, pinterest et anim placeat pour-over wes anderson flexitarian chambray. Pitchfork actually salvia cred, tousled blue bottle dolore wolf post-ironic YOLO food truck. Vinyl trust fund fashion axe kogi ennui post-ironic. Incididunt blog pork belly plaid laboris craft beer.<p>
+    	</div>
+    </div>
+	<!-- END DIVIDE -->
+
+      <div id="main" class="cf">
+      
+        <article class="columns four">
+          <h1>Gridtastic</h1>
+          <p>Single-origin coffee viral officia, vinyl kogi street art odd future. Voluptate before they sold out elit, raw denim farm-to-table banksy +1 assumenda iphone fap typewriter. Biodiesel +1 delectus chillwave wes anderson laboris. Umami cosby sweater cray, sartorial irure mollit enim quis dolor ad pariatur gluten-free gastropub etsy. Nostrud mcsweeney's farm-to-table, bushwick biodiesel 3 wolf moon master cleanse non enim brunch officia. Pariatur butcher gluten-free disrupt aliqua meh. Post-ironic quinoa fap biodiesel chambray ut, esse pinterest quis dolor proident.</p>
+        </article>
+  
+        <article class="columns four">
+          <h1>Flextacular</h1>
+          <p>Blog in aliqua keytar, meggings farm-to-table ad nisi. Occaecat anim cosby sweater odio leggings. Banh mi skateboard non small batch sunt brooklyn, cillum incididunt officia excepteur tonx Austin lomo photo booth. Tonx hashtag forage, hoodie plaid est whatever street art laboris keffiyeh eu. Letterpress nulla gastropub ex, street art cupidatat helvetica bushwick skateboard tonx carles eiusmod. Photo booth squid 8-bit, deep v placeat quinoa tofu gastropub ut. Nisi 90's cosby sweater butcher reprehenderit, locavore mustache williamsburg retro helvetica keytar.</p>
+          <p>Stumptown tumblr squid sartorial. Freegan fugiat exercitation hoodie polaroid. Kogi deserunt vegan post-ironic ethical flannel. Laboris VHS pug, 90's truffaut helvetica ethical adipisicing literally sunt elit. Keffiyeh cliche excepteur squid fanny pack, raw denim cray pinterest freegan you probably haven't heard of them selfies typewriter cupidatat brunch. Williamsburg stumptown aliqua, squid in brooklyn iphone typewriter odd future. Pickled fugiat pug aute.</p>
+        </article>
+  
+        <article class="columns four">
+          <h1>Imagetastic</h1>
+          <div class="slideshow">
+			<img class="four" src="butter-stick.png" />
+          	<img class="four" src="dash-icon-512_1x.jpg" />
+          	<img class="four" src="dj-chuckie-registered-brandmark.png" />
+          	<img class="four" src="donut.jpg" />
+          	<img class="four" src="screen_shot_2013-03-13_at_9.20.51_am.png" />
+          </div>
+        </article>
+
+      </div>
+
+	<div class="divide cf">
+    	
+        <aside>
+        	<h4 class="hide">Hide</h4>
+            <h4 class="show">Show</h4>
+        </aside>
+    
+    	<div class="inner">
+        	<div class="column">
+                <div class="nav">
+                    <a href="#" id="prev">Prev</a>
+                    <a href="#" id="next">Next</a>
+                </div>
+    			<div id="mainss" class="slideshow hide">
+                	<!-- IMAGE 1 -->
+    				<article class="post cf">
+						<div class="slideshow">
+                        	<img src="z-img/8550608342_5056c5d622_o.jpg" />
+                        	<img src="z-img/8553472410_edb6cbc3c0_o.jpg" />
+                        	<img src="z-img/8553480012_2dc4885c44_o.jpg" />
+                        </div>
+                        <h1>Lorem Ipsum</h1>
+          				<p>Stumptown tumblr squid sartorial. Freegan fugiat exercitation hoodie polaroid. Kogi deserunt vegan post-ironic ethical flannel. Laboris VHS pug, 90's truffaut helvetica ethical adipisicing literally sunt elit.</p>
+                    </article>
+                    <!-- END IMAGE 1 -->
+                    
+                    <!-- IMAGE 2 -->
+    				<article class="post">
+                    	<img src="z-img/8549970820_8ca370366d_o.jpg" />
+                        <h1>Dolor Sit Amet</h1>
+          				<p>Stumptown tumblr squid sartorial. Freegan fugiat exercitation hoodie polaroid. Kogi deserunt vegan post-ironic ethical flannel. Laboris VHS pug, 90's truffaut helvetica ethical adipisicing literally sunt elit.</p>
+                    </article>
+                    <!-- END IMAGE 2 -->
+                 </div>
+            </div>
+    	</div>
+    </div>
+        
+    <footer>
+      <p class="column">&copy; 2013 Whomever is working on this...</p>
+    </footer>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle.all.js"></script>
+
+    <!-- CUSTOM JS CAN GO IN HERE -->
+    <script>
+	$('.slideshow').cycle({ 
+    	fx:    'fade', 
+    	speed:  500
+ 		});
+	
+	$('#mainss').cycle({
+		fx:    'turnDown',
+		speed: 500,
+		timeout: 0,
+		next: '#next',
+		prev: '#prev'
+	});
+    </script>
+	<!-- END SLIDESHOW SCRIPTS-->
+    
+    <!-- Hide/Show -->
+    <script>
+		$(document).ready(function() {
+			$('.hide').hide();
+		});
+		
+		$('aside h4').click(function() {
+			$('.hide').toggle('slow');
+			$('.show').toggle('slow');
+		});
+		
+		$('h4.show').click(function() {
+			$('body').css('background','url(8px-blgrid.png) left top repeat');
+		});
+		
+	</script>
+    
+    
+    
+
+
+
+  </body>
+
+</html>
+
