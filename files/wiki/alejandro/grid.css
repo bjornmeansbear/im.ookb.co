@@ -1,0 +1,325 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+margin: 0;
+padding:0;
+	}
+	
+body {
+	background-color:#000;
+	color:white;
+	width:17000px;
+	font-family:'Source Sans Pro', Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:400;
+	}
+	
+.header {
+	text-transform:uppercase;
+	font-weight:600;
+	font-size:18px;
+	margin-left:55px;
+	width:220px;
+	margin-top:10px;
+	background-color:hsla(213, 33.3299%, 11.7190%, 0.8800);
+	}
+.header h1 {
+	text-align:center;
+	margin-top:10px;
+	}	
+
+.thin {
+	font-weight:200;
+	}		
+	
+.menu {
+	list-style: none;
+	margin-top:674px;
+	background-color:hsla(213, 33.3299%, 11.7190%, 0.8800);
+	height:50px;
+	width:1024px;
+	position:fixed;
+	
+}
+
+.menu li {
+	float: left;
+	margin-top:15px;
+	
+}
+
+.menu li a {
+	display: block;
+	margin: 0px 25px 10px 10px;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-weight:600;
+	color:#fff;
+}	
+
+.menu li a:hover { 
+text-decoration:underline;
+color:#FF0;
+}
+
+.menu li a.first {
+	margin-left:55px;
+	}
+	
+/* 2. Column Widths */
+/*=========================================*/
+/*=========================================*/
+
+.columns { float:left; }
+.special {clear:both;}
+.specialdeux {
+	position: absolute;
+	margin-left:750px;
+	margin-top:412px;}
+.specialtrois {
+	position:absolute;
+	margin-left:1324px;
+	}	
+
+	
+.one     { width:  58px; }
+.two     { width: 140px; }
+.three   { width: 222px; }
+.four    { width: 304px; }
+.five    { width: 386px; }
+.six     { width: 468px; }
+.seven   { width: 550px; }
+.eight   { width: 632px; }
+.nine    { width: 714px; }
+.ten     { width: 796px; }
+.eleven  { width: 878px; }
+.twelve  { width: 960px; }	
+
+
+/* 3. Offsets */
+/*=========================================*/
+/*=========================================*/
+.offsetone     { margin-left:  94px; }
+.offsettwo     { margin-left: 176px; }
+.offsetthree   { margin-left: 258px; }
+.offsetfour    { margin-left: 340px; }
+.offsetfive    { margin-left: 422px; }
+.offsetsix     { margin-left: 504px; }
+.offsetseven   { margin-left: 586px; }
+.offseteight   { margin-left: 668px; }
+.offsetnine    { margin-left: 750px; }
+.offsetten     { margin-left: 832px; }
+.offseteleven  { margin-left: 914px; }
+
+/*=========================================*/
+
+
+
+#intro {
+	float:left;
+	width:1024px;
+	height:768px;
+	background-image:url(images/aughts-slide1.jpg);
+	background-position: top left;
+	background-size: cover;
+	}
+	
+#section1 {
+	float:left;
+	width:2048px;
+	height:768px;
+	background-image:url(images/starbursts.png);
+	background-position: top left;
+	background-size: cover;
+	}	
+
+#section1 p {
+	background-color: hsla(117, 49.5370%, 46.5800%, .75);
+	padding:12px;
+	margin-top:10px;
+	text-indent:20px;
+	line-height:18px;
+	}	
+	
+#section2 {
+	float:left;
+	width:1056px;
+	height:768px;
+	background-image:url(images/hong-kong.jpg);
+	background-position: top left;
+	background-size: cover;
+	}	
+	
+#section2 p {
+	background-color: hsla(245, 73.1640%, 40.2245%, .75);
+	padding:16px;
+	margin-top:335px;
+	text-indent:20px;
+	line-height:18px;
+	width:1024px;
+	}	
+	
+#section3 {
+	float:left;
+	width:3122px;
+	height:768px;
+	background-image:url(images/cityscapes.jpg);
+	background-position: top left;
+	background-size: cover;
+	}	
+	
+#section3 p {
+	
+	padding-left:16px;
+	padding-right:16px;
+	line-height:18px;
+	}
+#section3 h4 {
+	text-transform:uppercase;
+	font-weight:600;
+	font-size:14px;
+	color:#F60;
+	margin-left:16px;
+	margin-top:16px;
+	}	
+	
+.modules {
+	margin-right:12px;
+	height:160px;
+	background-color: hsla(245, 73.1640%, 40.2245%, .75);
+	margin-top:10px;
+	}	
+	
+#section4 {
+	float:left;
+	width:1024px;
+	height:768px;
+	background-image:url(images/catchphrase.jpg);
+	background-position: top left;
+	background-size: cover;
+	}	
+	
+.firstgraph1, .firstgraph2 {
+	font-size:15px;
+	}
+		
+.firstgraph4 {
+	margin-top:145px;
+	margin-left:16px;
+	color:#000;
+	text-indent:20px;
+	font-size:15px;
+	}
+	
+#section4 p {
+	text-indent:20px;
+	color:#000;
+	line-height:18px;
+	}	
+	
+#section5 {
+	float:left;
+	width:1024px;
+	height:768px;
+	background-image:url(images/catchphrase-bground1.jpg);
+	background-position: top left;
+	background-size: cover;
+	}	
+	
+#section5 p {
+	color:#000;
+	text-indent:20px;
+	line-height:18px;
+	}
+	
+.firstgraph5 {
+	margin-top:60px;
+	}
+	
+.secondgraph5 {
+	margin-top:330px;
+	}	
+	
+#section6 {
+	float:left;
+	width:2048px;
+	height:768px;
+	background-image:url(images/catchphrase-bground2.jpg);
+	background-position: top left;
+	background-size: cover;
+	}	
+	
+.firstgraph6 {
+	margin-top:210px;
+	}
+	
+.secondgraph6 {
+	margin-top:-345px;
+	}
+		
+#section6 p {
+	color:#000;
+	text-indent:20px;
+	line-height:18px;
+	}
+	
+.textshift {
+	font-family: 'Arvo', serif;
+	background-color:black;
+	font-weight:400;
+	color:#fff;
+	}	
+	
+.thirdgraph6 {
+	margin-top:-200px;
+	}	
+	
+.fourthgraph6 {
+	margin-top:-75px;
+	}
+
+.fifthgraph6 {
+	margin-top:15px;
+	}		
+	
+#section7 {
+	float:left;
+	width:2048px;
+	height:768px;
+	background-image:url(images/cuttingedgebground.jpg);
+	background-position: top left;
+	background-size: cover;
+	}	
+
+.firstgraph7 {
+	font-size:15px;
+	margin-left:32px;
+	margin-top:10px;
+	}	
+	
+#section7 p {
+	color:#000;
+	text-indent:20px;
+	line-height:18px;
+	}	
+	
+.secondgraph7 {
+	margin-top:100px;
+	}	
+	
+.thirdgraph7 {
+	margin-top:10px;
+	}
+
+.fourthgraph7 {
+	margin-top:-60px;
+	}	
+	
+.fifthgraph7 {
+	margin-top:-90px;
+	}	
+	
+.sixthgraph7 {
+	margin-top:155px;
+	}							
