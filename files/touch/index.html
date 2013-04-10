@@ -91,11 +91,14 @@
       });
 
       $( "#swiper" ).on( "swipeleft", function( event ) { 
-        $(".home" ).addClass( "orange" );
+        $("#swiper section" ).addClass( "orange" );
       });
 
       $( "#toggler" ).on( "swiperight", function( event ) { 
-        $("#toggler p" ).toggle( 750 );
+        $("#toggler p" ).show( 750 );
+      });
+      $( "#toggler" ).on( "swipeleft", function( event ) { 
+        $("#toggler p" ).hide( 750 );
       });
 
       // returned to older V.
