@@ -73,14 +73,17 @@
       //});
 
       $( ".home" ).on( "swipeleft", function( event ) { 
-        $(".home" ).removeClass("blue orange").addClass( "red" );
+        $(".home" ).removeClass();
+        $(".home" ).addClass( "red" );
       });
       $( ".home" ).on( "swiperight", function( event ) { 
-        $(".home" ).removeClass("red orange").addClass( "blue" );
+        $(".home" ).removeClass();
+        $(".home" ).addClass( "blue" );
       });
 
       $( "#swiper" ).on( "swipeleft", function( event ) { 
-        $("#swiper section").removeClass("blue red").addClass( "orange" );
+        $(".home" ).removeClass();
+        $(".home" ).addClass( "orange" );
       });
 
       // returned to older V.
