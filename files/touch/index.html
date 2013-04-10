@@ -73,14 +73,14 @@
       //});
 
       $( ".home" ).on( "swipeleft", function( event ) { 
-        $(".home" ).removeClass().addClass( "red" );
+        $(".home" ).removeClass("blue orange").addClass( "red" );
       });
       $( ".home" ).on( "swiperight", function( event ) { 
-        $(".home" ).removeClass().addClass( "blue" );
+        $(".home" ).removeClass("red orange").addClass( "blue" );
       });
 
       $( "#swiper" ).on( "swipeleft", function( event ) { 
-        $("#swiper section").removeClass().addClass( "orange" );
+        $("#swiper section").removeClass("blue red").addClass( "orange" );
       });
 
       // returned to older V.
