@@ -65,10 +65,17 @@
     <!-- CUSTOM JS CAN GO IN HERE -->
     <!-- Slideshow Controls -->
     <script>
-      $('body').on( "swipeleft", function( event ) {
-        $('body').addclass("red");
+    
+      $(function() {
+        // Bind the swipeHandler callback function to the swipe event on div.box
+        $( "#main" ).on( 'swipeleft', swipeHandler );
+       
+        // Callback function references the event target and adds the 'swipe' class to it
+        function swipeHandler( event ) {
+          $(event.target).addClass( "red" );
+        }
       });
-
+        
     </script>  
     
     <!-- end scripts-->
