@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/layout.css">
+  
+  <script src="js/modernizr-2.5.3.js"></script>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+      <h1>CSS Type Specimen Demo</h1>
+      <hr class="clear" />
+    </header>
+    <div id="main" role="main">
+      <div class="a dragme letterform"><p>A</p></div>
+      <div class="b dragme letterform"><p>B</p></div>
+      <div class="c dragme letterform"><p>C</p></div>
+      <div class="d dragme letterform"><p>D</p></div>
+      <div class="e dragme letterform"><p>E</p></div>
+      <div class="f dragme letterform"><p>F</p></div>
+      <div class="g dragme letterform"><p>G</p></div>
+      <div class="h dragme letterform"><p>H</p></div>
+      <div class="i dragme letterform"><p>I</p></div>
+      <div class="j dragme letterform"><p>J</p></div>
+      <hr class="clear" />
+    </div>
+    <footer>
+      <p>this might work for copying letterforms: <a href="http://api.jquery.com/clone/">http://api.jquery.com/clone/</a></p>
+      <p>Once Gabe gets his act together we can make this for real!</p>
+    </footer>
+  </div> <!-- eo #container -->
+
+  <script src="js/jquery-1.7.2.js"></script>
+  <script src="js/jquery-ui/ui/jquery.ui.core.js"></script>
+  <script src="js/jquery-ui/ui/jquery.ui.widget.js"></script>
+  <script src="js/jquery-ui/ui/jquery.ui.mouse.js"></script>
+  <script src="js/jquery-ui/ui/jquery.ui.draggable.js"></script>
+  
+  <script type="text/javascript">
+  	$(function() {
+  		$( ".dragme" ).draggable();
+  	});
+	</script>  
+
+  <script src="js/csstype.js"></script>
+  
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg");</script>
+  <![endif]-->
+
+</body>
+</html>
+
+
+<script src="../../ui/jquery.ui.core.js"></script>

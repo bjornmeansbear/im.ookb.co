@@ -1,0 +1,17 @@
+.clear {clear:both;}
+
+.letterform {
+  background: #DDD;
+  float: left;  
+  display: block;
+  height: 100px;
+  margin: 10px;
+  width: 100px;
+}
+
+.letterform p {
+  font-size: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 0;
+}
