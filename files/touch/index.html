@@ -13,8 +13,9 @@
         color:rgba(47,41,38,1) !important;
       }
       
-      .red  { background: rgba(183,80,81,1); }
-      .blue { background: rgba(157,178,176,1); }
+      .red     { background: rgba(183,80,81,1); }
+      .orange  { background: rgba(195,115,99,1); }
+      .blue    { background: rgba(157,178,176,1); }
     </style>
 
   </head>
@@ -31,15 +32,22 @@
 
     <div id="main" role="main" class="container">
 
-      <!-- main homepage slideshow -->
+      <!-- ****** -->
       <article class="row">
         <section class="span12">
           <p>Swipe left to turn the page red.</p>
           <p>Swipe right to turn the page blue.</p>
         </section>
       </article>
-      
-      <!-- end slideshow -->
+      <!-- end -->
+
+      <!-- ****** -->
+      <article id="swiper" class="row">
+        <section class="span12 red" style="height:200px;">
+          <p>Swipe Me!</p>
+        </section>
+      </article>
+      <!-- end -->
             
     </div>
 
@@ -58,11 +66,17 @@
 
     <!-- CUSTOM JS CAN GO IN HERE -->
     <script>
-    
       $( ".home" ).on( "swipeleft", function( event ) { 
         $(event.target).addClass( "red" );
       });
-        
+      $( ".home" ).on( "swiperight", function( event ) { 
+        $(event.target).addClass( "blue" );
+      });
+
+      $( "#swiper" ).on( "swipeleft", function( event ) { 
+        $(event.target).addClass( "orange" );
+      });
+
     </script>  
     
     <!-- end scripts-->
