@@ -73,15 +73,17 @@
       //});
 
       $( ".home" ).on( "swipeleft", function( event ) { 
-        $(".home" ).addClass( "red" );
+        $(".home" ).removeClass().addClass( "red" );
       });
       $( ".home" ).on( "swiperight", function( event ) { 
-        $(".home" ).addClass( "blue" );
+        $(".home" ).removeClass().addClass( "blue" );
       });
 
       $( "#swiper" ).on( "swipeleft", function( event ) { 
-        $("#swiper section").addClass( "orange" );
+        $("#swiper section").removeClass().addClass( "orange" );
       });
+
+      // returned to older V.
 
     </script>  
     
