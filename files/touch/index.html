@@ -66,15 +66,21 @@
 
     <!-- CUSTOM JS CAN GO IN HERE -->
     <script>
+
+      //$( "SELECTOR" ).on( "swipe", function( event ) { 
+        //$(event.target).addClass( "red" );
+        //THIS CAN BE ANY OTHER KIND OF FUNCTION TOO...
+      //});
+
       $( ".home" ).on( "swipeleft", function( event ) { 
-        $(event.target).addClass( "red" );
+        $(".home" ).addClass( "red" );
       });
       $( ".home" ).on( "swiperight", function( event ) { 
-        $(event.target).addClass( "blue" );
+        $(".home" ).addClass( "blue" );
       });
 
       $( "#swiper" ).on( "swipeleft", function( event ) { 
-        $(event.target).addClass( "orange" );
+        $("#swiper section").addClass( "orange" );
       });
 
     </script>  
