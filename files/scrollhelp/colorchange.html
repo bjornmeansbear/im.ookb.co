@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<style>
+		  * { margin: 0; padding: 0; background: none;}
+		  html, body {height:100%;}
+		  header {
+  		  height: 600px;
+  		  background: rgba(140,165,115,1);
+  		  width: 100%;
+  		  overflow: hidden;
+		  }
+		  		  
+		  article {
+  		  margin-top: 600px;
+		  }
+		  
+		  article section {
+  		  width: 960px;
+  		  margin: 0px auto;
+  		  padding: 60px 0;
+		  }
+		  
+		  footer {
+  		  background: rgba(169,87,86,1);
+  		  height: auto;
+  		  width: 100%;
+		  }
+		  
+
+      body {
+        background: rgba(132,132,120,1);
+        color:rgba(47,41,38,1) !important;
+        -webkit-transition: all 500ms;
+      }
+      
+      .red     { background: rgba(183,80,81,1); }
+      .orange  { background: rgba(195,115,99,1); }
+      .yellow  { background: rgba(197,192,101,1); }
+      .blue    { background: rgba(157,178,176,1); }
+    		  
+		</style>
+
+	</head>
+
+	<body>
+
+  	<header>
+    	<img src="mwood.jpg" />
+  	</header>
+  	
+  	<article id="one">
+    	<section>
+    	 <h1>First Article Title</h1>
+    	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	</section>
+  	</article>
+
+  	<article id="two">
+    	<section>
+    	 <h1>Second Article Title</h1>
+    	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	</section>
+  	</article>
+  
+  	<article id="three">
+    	<section>
+    	 <h1>Third and last Article Title</h1>
+    	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	</section>
+  	</article>
+  
+  	<footer id="four">
+    	<img src="mamu.jpg" />
+  	</footer>
+
+	</body>
+	
+	<script src="jquery-1.9.1.js"></script>
+	<script>
+      $(window).scroll(function(){
+        var s = $(window).scrollTop();
+        var pone = $('#one').position();
+        var ptwo = $('#two').position();
+        var pthree = $('#three').position();
+        var pfour = $('#four').position();
+
+        if( s == 0 ) {
+          $('body').removeClass();
+		    }
+        if( s <= pone.top  ) {
+          $('body').removeClass();
+        }
+		    if( s >= pone.top ) {
+		      $('body').removeClass().addClass('red');
+		    }
+		    if( s >= ptwo.top ) {
+		      $('body').removeClass().addClass('blue');
+		    }
+		    if( s >= pthree.top ) {
+		      $('body').removeClass().addClass('yellow');
+		    }
+        if( s >= pfour.top  ) {
+          $('body').removeClass();
+        }
+		  });
+
+	</script>
+	
+</html>
