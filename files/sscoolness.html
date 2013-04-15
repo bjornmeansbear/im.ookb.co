@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Positioning and Colors...</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+
+    <ul id="nav">
+      <li><a class="pager" href="#"><img src="http://farm9.staticflickr.com/8387/8627248283_c052f7e5c2_s.jpg" width="75" height="75" alt="Im not sure what this is, but the packaging is amazing"></a> <a href="http://www.ookb.co/">Lorem Ipsum dolor</a> sit amet adis plicit</li>
+      <li><a class="pager" href="#"><img src="http://farm9.staticflickr.com/8245/8626332162_22f900ed95.jpg" width="75" height="75" alt="Bjorn means amazing art project ..."></a> <a href="http://www.ookb.co/">Lorem Ipsum dolor</a> sit amet adis plicit</li>
+      <li><a class="pager" href="#"><img src="http://farm9.staticflickr.com/8262/8624424909_0eee5219b2.jpg" width="75" height="75" alt="Nice Mark."></a>
+ <a href="http://www.ookb.co/">Lorem Ipsum dolor</a> sit amet adis plicit</li>
+    </ul>
+
+    <div class="slideshow">
+      <img src="http://farm9.staticflickr.com/8387/8627248283_e391e75aca_o.jpg" alt="Im not sure what this is, but the packaging is amazing">
+      <img src="http://farm9.staticflickr.com/8245/8626332162_726e75d814_o.jpg" alt="Bjorn means amazing art project ...">
+      <img src="http://farm9.staticflickr.com/8262/8624424909_1451cd932b_o.jpg" alt="Nice Mark.">
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://malsup.github.io/jquery.cycle.all.js"></script>
+
+    <script>
+      $('.slideshow').cycle({
+          fx:     'fade',
+          speed:  750,
+          timeout: 0,
+          pager:  '#nav',
+          pagerAnchorBuilder: function(idx, slide) {
+              // return sel string for existing anchor
+              return '#nav li:eq(' + (idx) + ') .pager';
+          }
+      });
+    </script>
+
+  </body>
+
+</html>
+
+
