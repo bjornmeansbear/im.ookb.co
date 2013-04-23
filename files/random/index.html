@@ -82,12 +82,14 @@
         <!-- SLIDESHOW -->
         <a id="prev" class="span1">Previous</a>
         <div class="stack span6">
+        <a href="#">
           <img src="http://farm9.staticflickr.com/8387/8627248283_e391e75aca_o.jpg" />
           <img src="http://farm9.staticflickr.com/8245/8626332162_726e75d814_o.jpg" />
           <img src="http://farm9.staticflickr.com/8262/8624424909_1451cd932b_o.jpg" />
           <img src="http://farm9.staticflickr.com/8387/8627248283_e391e75aca_o.jpg" />
           <img src="http://farm9.staticflickr.com/8245/8626332162_726e75d814_o.jpg" />
           <img src="http://farm9.staticflickr.com/8262/8624424909_1451cd932b_o.jpg" />
+        </a>
         </div>
         <a id="next" class="span1">next</a>
         <!-- /END SLIDESHOW -->
@@ -128,10 +130,11 @@
       //randomly assign some position values
       $(document).ready(function() {
         $('#four .stack img').each(function() {
-          var numRand = Math.floor(Math.random()*101);
-          $(this).css('top', numRand );
-          $(this).css('left', numRand );
-          $(this).css("-webkit-transform","rotate(" + (numRand*3) + "deg)");
+          var numRand    = Math.random()*51;
+          var multiplier = Math.round(Math.random())*2-1;
+          $(this).css('top', numRand*multiplier );
+          $(this).css('left', numRand*multiplier );
+          $(this).css("-webkit-transform","rotate(" + numRand*multiplier + "deg)");
         });
       });
 
