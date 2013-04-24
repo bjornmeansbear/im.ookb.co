@@ -31,16 +31,34 @@
       <hr class="clear" />
     </header>
     <div id="main" role="main">
-      <div class="a letterform"><p class="dragme">A</p></div>
-      <div class="b letterform"><p class="dragme">B</p></div>
-      <div class="c letterform"><p class="dragme">C</p></div>
-      <div class="d letterform"><p class="dragme">D</p></div>
-      <div class="e letterform"><p class="dragme">E</p></div>
-      <div class="f letterform"><p class="dragme">F</p></div>
-      <div class="g letterform"><p class="dragme">G</p></div>
-      <div class="h letterform"><p class="dragme">H</p></div>
-      <div class="i letterform"><p class="dragme">I</p></div>
-      <div class="j letterform"><p class="dragme">J</p></div>
+      <div>
+        <div class="a dragme letterform"><p>A</p></div>
+        <div class="b dragme letterform"><p>B</p></div>
+        <div class="c dragme letterform"><p>C</p></div>
+        <div class="d dragme letterform"><p>D</p></div>
+        <div class="e dragme letterform"><p>E</p></div>
+        <div class="f dragme letterform"><p>F</p></div>
+        <div class="g dragme letterform"><p>G</p></div>
+        <div class="h dragme letterform"><p>H</p></div>
+        <div class="i dragme letterform"><p>I</p></div>
+        <div class="j dragme letterform"><p>J</p></div>
+        <div class="k dragme letterform"><p>K</p></div>
+        <div class="l dragme letterform"><p>L</p></div>
+        <div class="m dragme letterform"><p>M</p></div>
+        <div class="n dragme letterform"><p>N</p></div>
+        <div class="o dragme letterform"><p>O</p></div>
+        <div class="p dragme letterform"><p>P</p></div>
+        <div class="q dragme letterform"><p>Q</p></div>
+        <div class="r dragme letterform"><p>R</p></div>
+        <div class="s dragme letterform"><p>S</p></div>
+        <div class="t dragme letterform"><p>T</p></div>
+        <div class="u dragme letterform"><p>U</p></div>
+        <div class="v dragme letterform"><p>V</p></div>
+        <div class="w dragme letterform"><p>W</p></div>
+        <div class="x dragme letterform"><p>X</p></div>
+        <div class="y dragme letterform"><p>Y</p></div>
+        <div class="z dragme letterform"><p>Z</p></div>
+      </div>
       <hr class="clear" />
     </div>
     <footer>
@@ -51,23 +69,25 @@
 
   <script src="js/jquery-1.7.2.js"></script>
   <script src="js/jquery-ui/ui/jquery.ui.core.js"></script>
+  <script src="js/jquery-ui/ui/jquery.ui.widget.js"></script>
+  <script src="js/jquery-ui/ui/jquery.ui.mouse.js"></script>
   <script src="js/jquery-ui/ui/jquery.ui.draggable.js"></script>
   
   <script type="text/javascript">
-
-    $(document).ready(function() {
+    
+    $(function() {
       $('.dragme').draggable();
     });
 
-    
-
-    }
-
     $(".letterform").click(function() {
       $(this).clone().prependTo('#main hr.clear');
+      $('.dragme').draggable();
     });
     
   </script>  
+
+<!--   <script src="js/csstype.js"></script> -->
+  
 
 </body>
 </html>
