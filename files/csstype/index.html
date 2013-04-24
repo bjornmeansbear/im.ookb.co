@@ -55,14 +55,17 @@
   
   <script type="text/javascript">
 
-    $(".letterform").click(function() {
-      $(this).clone().prependTo('#main hr.clear');
-    });
-    
-    $(function() {
+    $(document).ready(function() {
       $('.dragme').draggable();
     });
 
+    
+
+    }
+
+    $(".letterform").click(function() {
+      $(this).clone().prependTo('#main hr.clear');
+    });
     
   </script>  
 
