@@ -31,16 +31,16 @@
       <hr class="clear" />
     </header>
     <div id="main" role="main">
-      <div class="a dragme letterform"><p>A</p></div>
-      <div class="b dragme letterform"><p>B</p></div>
-      <div class="c dragme letterform"><p>C</p></div>
-      <div class="d dragme letterform"><p>D</p></div>
-      <div class="e dragme letterform"><p>E</p></div>
-      <div class="f dragme letterform"><p>F</p></div>
-      <div class="g dragme letterform"><p>G</p></div>
-      <div class="h dragme letterform"><p>H</p></div>
-      <div class="i dragme letterform"><p>I</p></div>
-      <div class="j dragme letterform"><p>J</p></div>
+      <div class="a letterform"><p class="dragme">A</p></div>
+      <div class="b letterform"><p class="dragme">B</p></div>
+      <div class="c letterform"><p class="dragme">C</p></div>
+      <div class="d letterform"><p class="dragme">D</p></div>
+      <div class="e letterform"><p class="dragme">E</p></div>
+      <div class="f letterform"><p class="dragme">F</p></div>
+      <div class="g letterform"><p class="dragme">G</p></div>
+      <div class="h letterform"><p class="dragme">H</p></div>
+      <div class="i letterform"><p class="dragme">I</p></div>
+      <div class="j letterform"><p class="dragme">J</p></div>
       <hr class="clear" />
     </div>
     <footer>
@@ -51,27 +51,20 @@
 
   <script src="js/jquery-1.7.2.js"></script>
   <script src="js/jquery-ui/ui/jquery.ui.core.js"></script>
-  <script src="js/jquery-ui/ui/jquery.ui.widget.js"></script>
-  <script src="js/jquery-ui/ui/jquery.ui.mouse.js"></script>
   <script src="js/jquery-ui/ui/jquery.ui.draggable.js"></script>
   
   <script type="text/javascript">
-  	$(function() {
-  		$( ".dragme" ).draggable();
-  	});
-	</script>  
 
-  <script src="js/csstype.js"></script>
-  
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <!-- end scripts-->
+    $(".letterform").click(function() {
+      $(this).clone().prependTo('#main hr.clear');
+    });
+    
+    $(function() {
+      $('.dragme').draggable();
+    });
 
-  <!--[if lt IE 7 ]>
-    <script src="js/libs/dd_belatedpng.js"></script>
-    <script>DD_belatedPNG.fix("img, .png_bg");</script>
-  <![endif]-->
+    
+  </script>  
 
 </body>
 </html>

@@ -21,4 +21,5 @@ ul.nav li.right {
 
 #four .stack { position: relative; }
 #four .stack img { position: absolute; z-index: 1; box-shadow: 2px 2px 10px black; }
-#four .stack img:hover { position: absolute; z-index: 100; }
+#four .stack img:hover,
+#four .stack img:active { z-index: 100; }
