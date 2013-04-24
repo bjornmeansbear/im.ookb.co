@@ -81,7 +81,7 @@
         
         <!-- SLIDESHOW -->
         <a id="prev" class="span1">Previous</a>
-        <div class="stack span6">
+        <div class="stack span6 dragme">
         <a href="#">
           <img src="http://farm9.staticflickr.com/8387/8627248283_e391e75aca_o.jpg" />
           <img src="http://farm9.staticflickr.com/8245/8626332162_726e75d814_o.jpg" />
@@ -110,6 +110,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/ui/jquery-ui.js"></script>
+    <script src="js/ui/jquery.ui.draggable.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="http://malsup.github.io/jquery.cycle.all.js"></script>
     
@@ -135,9 +137,15 @@
           $(this).css('top', numRand*multiplier );
           $(this).css('left', numRand*multiplier );
           $(this).css("-webkit-transform","rotate(" + numRand*multiplier + "deg)");
+          //$(this).css("-webkit-transform","skew(" + numRand/2*multiplier + "deg," + numRand*2*multiplier + "deg)");
         });
       });
 
+
+  	$(function() {
+  		$( ".dragme img" ).draggable();
+  	});
+	
    </script>
     
   </body>
