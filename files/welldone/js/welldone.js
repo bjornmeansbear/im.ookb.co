@@ -10,22 +10,13 @@ $(document).ready(function() {
     function() {
       $(this).find('article.description').css("visibility","visible");
       var desch = $(this).find('article.description p').height();
-      $(this).find('article.description').css("height",desch+120);
+      $(this).find('article.description').css("height",desch+70);
     },
     function() { 
       $('article.description').css("visibility","hidden");
     });
 });
   
-/*
-  // scroll to content when you click on the logo. - retrieved from http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links
-  $('nav a').click(function(event){    
-    event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
-  });
-  
-*/
-
 
 // masonry stuff to fit everything together...
 $(function(){
@@ -38,4 +29,12 @@ $(function(){
     });
   });
 
+});
+
+// slideshow code for gallery page...
+$('.slideshow').cycle({
+  fx: 'fade',
+  speed: 700,
+  timeout:0,
+  next:'.slideshow'
 });
