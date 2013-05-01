@@ -1,0 +1,51 @@
+/* CUSTOM STYLES */
+
+body { background:red; padding-bottom: 1000px}
+
+.add-top {padding-top: 80px;}
+
+#four, #six { height: 600px;}
+
+
+ul.nav {
+  float: none;
+}
+
+ul.nav li.small {
+  font-size: 75%;
+}
+
+ul.nav li.right {
+  float: right;
+}
+
+.thumb_title { display:none; }
+project_thumb:hover .thumb_title {display:block;}
+
+#five {
+  overflow: auto;
+  height:230px;
+}
+
+.slideshow, .slideshow img { height: 570px; }
+
+.sitenav {
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  left:0;
+  display: block;
+  width: 100%;
+}
+
+.sitenav nav ul {
+  background: pink;
+  height:30px;
+  overflow: hidden;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+}
+
+.sitenav nav ul:hover {
+  height: 300px;
+}
