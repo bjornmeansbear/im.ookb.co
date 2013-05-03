@@ -60,6 +60,10 @@ header, .divide .inner, #main, footer { width: 984px; margin: 0 auto; }
 
 article.post .columns { margin: 0 !important; }
 
+article p {
+  text-indent: -8px !important;
+}
+
 /* 4. Other Custom Grid-ular stuff */
 /*=========================================*/
 /*=========================================*/
