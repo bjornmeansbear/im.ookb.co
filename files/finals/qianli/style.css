@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* 2. Column Widths */
+
+.column, .columns { margin: 0 12px; }
+.columns { float:left; }
+
+.one{width:58px;}
+.two{width:140px;}
+.three{width:222px;}
+.four{width:304px;}
+.five{width:386px;}
+.six{width:468px;}
+.seven{width:550px;}
+.eight{width:632px;}
+.nine{width:714px;}
+.ten{width:796px;}
+.eleven{width:878px;}
+.twelve{width:960px;}
+
+
+.offsetone{margin-left:94px;}
+.offsettwo{margin-left:140px;}
+.offsetthree{margin-left:222px;}
+.offsetfour{margin-left:304px;}
+.offsetfive{margin-left:386px;}
+.offsetsix{margin-left:468px;}
+.offsetseven{margin-left:550px;}
+.offseteight{margin-left:632px;}
+.offsetnine{margin-left:714px;}
+.offsetten{margin-left:796px;}
+.offseteleven{margin-left:878px;}
+.offsettwelve{margin-left:960px;}
+
+
+
+
+
+body { margin: 0;
+       font-family: 'Open Sans', sans-serif;
+	  } 
+
+header,.inner, #researchtext { width: 984px; margin:0 auto;
+	        /*background: transparent url(960px-12col-58w-24gut.png) center top repeat-y; */
+}
+
+
+/* nav begin */
+.nav{ margin-top:8px;
+      font-family: 'Open Sans', sans-serif;
+	  font-size:12px;
+	  color:#000;
+	  position: relative;
+	  letter-spacing:1px;
+	 }
+	 
+.nav li{ float:left;
+         
+}
+         
+#research{ position:absolute;
+	       right:200px;} 
+	   
+		   
+#exhibition{ position:absolute;
+             right:105px;}	
+			 
+			 
+#publication{ position:absolute;
+              right:0;}				 
+			 
+/* nav end */			 
+			 	
+	
+					 
+/* six point title begin*/
+.branding {text-align:center;
+           margin-top:100px;
+		   margin-bottom:60px;}		 
+/*.branding img{ clear:both;
+           display:block;
+          }		  
+*/
+/* six point title end*/
+
+
+
+/*video begin */
+
+.videotext{  font-family: 'Open Sans', sans-serif;
+             font-size:15px;
+			 letter-spacing:2px;
+             margin-top:30px;
+			 margin-bottom: 30px;
+            text-align:center;}		
+			
+					 
+/*video end */
+
+	   
+/* research begin */ 
+			
+.research{
+	font-family: 'Open Sans', sans-serif;
+	border-top:1px solid #999;
+	letter-spacing:1.3px;
+	padding-top:15px;
+	position:relative;
+	margin-bottom:20px;
+	}
+	
+	
+
+	
+#researchtext{ font-family: 'Open Sans', sans-serif;
+	           font-size:12.5px; 
+			   letter-spacing:1px;
+			   line-height:180%;
+			   margin-top:20px;
+			   margin-left:-12px;
+			   
+			   }
+			   
+#researchReadmore{ font-family: 'Open Sans', sans-serif;
+	           font-size:12.5px; 
+			   letter-spacing:1px;
+			   line-height:180%;
+			   margin-top:20px;
+			   margin-left:12px;
+			   margin-bottom: 50px;
+			   }		   
+			   
+			   
+.columns p { padding-bottom:25px;}	
+
+
+.research p{ padding-bottom:10px;
+	}		
+			   		   	 	
+.research aside{ 
+	position:absolute;
+	right:0;
+	top:15px;
+}
+ 
+
+	
+/* research end */ 	
+
+		 
+
+
+/* exhibition begin */ 
+.exhibition { clear:both;
+             display:block;
+             font-family: 'Open Sans', sans-serif;
+			 border-top:1px solid #999;
+			 letter-spacing:1.3px;
+	         padding-top:15px;
+			 position:relative;
+			 margin-top: 10px;
+			 margin-bottom: 20px;
+			 
+			 }
+			 
+.exhibition	aside{ 
+				  position:absolute;
+				  right:0;
+				  top:15px;
+}		 
+
+			 
+#slideshow{ margin-top: 20px;
+            margin-left:0}
+			
+.slidenav{ margin-top:5px;
+           text-align:center;
+		   padding:5px; }			
+
+	   
+/* exhibition end */ 	
+
+
+
+/* publication begin */
+
+.publication { clear:both;
+             display:block;
+             font-family: 'Open Sans', sans-serif;
+			 border-top:1px solid #999;
+			 letter-spacing:1px;
+	         padding-top:15px;
+			 position:relative;
+			 margin-top: 10px;
+			 margin-bottom: 20px;
+			 
+			 }
+
+.publication aside{ 
+	position:absolute;
+	right:0;
+	top:15px;
+}
+
+/* publication end */
+
+.footer{ font-size:12px;
+		 border-top:1px solid #999;
+		 padding:30px;
+		 text-align:center;
+		 margin-top: 20px;
+		 margin-bottom:10px;}			 		
+		   
+		   
+		   
