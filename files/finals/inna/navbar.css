@@ -1,0 +1,21 @@
+/*GDMFA Navigation Header*/
+
+#gdmfa{
+	font-size:.75em;
+	font-family: Arial;
+	background:black;
+	position:absolute;
+	margin:0;
+	width:100%;
+	height:2em;
+	padding:.5em 0 0 50px;
+	z-index: 9999;
+	}
+	
+#gdmfa li{list-style:none;float:left;padding-right:1em;}
+#gdmfa li a{color:white; text-decoration: none;letter-spacing:0.1em;}
+#gdmfa li #home {width:150px;margin:0 2em 0 0;}
+#gdmfa li .prev {width:28px;margin:0 0 0 20px ;}
+
+
+/*--------------------------------------------------------------------*/
