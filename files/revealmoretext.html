@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EXAMPLE OF HIDE/SHOW TEXT</title>
+	</head>
+	<body>
+
+    <article>
+      
+      <p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><a href="#" class="more">READ MORE!</a></p>
+            
+      <section class="toggle">
+        <p>Intelligentsia shoreditch pinterest freegan, fugiat narwhal meh occaecat cred proident forage try-hard neutra Austin banksy. Laborum tofu sustainable, freegan DIY cupidatat single-origin coffee hoodie ullamco culpa vice ethnic. Placeat disrupt gastropub, elit pug nesciunt quis fingerstache do. Put a bird on it polaroid labore nulla lomo art party, high life ut cray authentic sriracha gluten-free tempor kogi. Flexitarian yr culpa tattooed bicycle rights. Authentic stumptown gastropub, keffiyeh you probably haven't heard of them 3 wolf moon accusamus iphone 8-bit sustainable placeat. Sartorial magna photo booth, leggings farm-to-table fixie truffaut before they sold out id mollit aute +1 excepteur four loko.</p>
+        <p>Retro banjo semiotics, tumblr forage officia single-origin coffee tempor helvetica locavore godard eiusmod cardigan pitchfork. Cillum vero banh mi, fingerstache nihil thundercats fixie minim ullamco cardigan commodo do readymade. Nostrud irony consequat, blue bottle locavore odio mlkshk semiotics nihil do synth small batch mustache consectetur. Cred single-origin coffee odio trust fund, actually ethnic delectus before they sold out fixie church-key laborum. DIY accusamus eu et ugh irure. Do artisan terry richardson banh mi. Messenger bag mollit elit butcher 90's readymade, vegan ethnic</p>
+        <p>Lomo cosby sweater adipisicing next level blog banh mi. Yr et flexitarian sustainable culpa, scenester VHS whatever farm-to-table bespoke post-ironic irony pickled ugh. Shoreditch literally narwhal tempor neutra. Neutra gluten-free assumenda aesthetic Austin. DIY tumblr organic quinoa pork belly. Flannel before they sold out fanny pack ethical, wayfarers retro adipisicing cliche aliqua labore velit you probably haven't heard of them iphone blue bottle. Flannel Austin VHS vice, neutra gentrify YOLO pork belly ullamco.</p>
+        <p>Narwhal excepteur high life mumblecore nihil nesciunt. Lomo irure gluten-free tofu, skateboard banjo velit esse dolor terry richardson consequat chambray banksy do. Freegan wes anderson reprehenderit portland mlkshk. Wayfarers sustainable reprehenderit jean shorts master cleanse magna. Do DIY blog, leggings brunch VHS 8-bit jean shorts dolor. Ennui seitan mixtape, veniam pickled commodo mlkshk elit YOLO wolf tousled. Odd future fap Austin tousled sed, fugiat banh mi sapiente bushwick reprehenderit accusamus authentic direct trade.</p>
+        <a href="#" class="less" >LESS!</a>
+      </section>
+    
+    </article>
+
+    <!-- JS BELOW HERE -->
+    <!-- ======================================================== -->    
+    <!-- ======================================================== -->    
+    <!-- ======================================================== -->    
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    
+      // INITIAL HIDING OF EVERTHING
+      $('section.toggle').hide();
+    
+      // REVEALS HIDDEN TEXT, HIDES MORE BUTTON
+      $('a.more').click(function(event){
+        event.preventDefault();
+        $(this).hide();
+        $('section.toggle').slideDown(700);
+      });
+    
+      // RE-HIDES TEXT, SHOWS MORE BUTTON
+      $('a.less').click(function(event){
+        event.preventDefault();
+        $('section.toggle').slideUp(700);
+        $('a.more').delay(700).show(700);
+      });
+    
+    </script>
+
+	</body>
+</html>
